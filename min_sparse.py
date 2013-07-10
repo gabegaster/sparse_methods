@@ -1,6 +1,8 @@
 import numpy as np
 from scipy import sparse
 
+# see http://stackoverflow.com/questions/13426580/minimum-of-a-sparse-matrix
+
 def min_rows_sparse(X):
     if type(X) is not sparse.csc_matrix:
         X = X.tocsc()
